@@ -42,6 +42,16 @@ int main(int argc, char const *argv[])
         printf("socket bind success:ip=%s port=%d\n",ip.c_str(),port);
     }
 
+    if(listen(sockfd,1024) < 0)
+    {
+        printf("socket listen error: errno=%d errmsg=%s\n",errno,strerror(errno));
+        return 1;
+    }
+    else
+    {
+        printf("Socket listen ...\n");
+    }
+
     while (true)
     {
         /* code */

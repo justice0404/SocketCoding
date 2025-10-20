@@ -1,0 +1,10 @@
+// 在settings.json中添加
+{
+    "terminal.integrated.profiles.windows": {
+        "Cygwin": {
+            "path": "D:\\Cygwin\\bin\\bash.exe",
+            "args": ["-l"]
+        }
+    },
+//    "terminal.integrated.defaultProfile.windows": "Cygwin"
+}
